@@ -340,6 +340,8 @@ p.link {
 
 .form-group {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 
@@ -429,9 +431,7 @@ th, td {
 /* ********************************************* */
 
 .form-inline {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
+	display: block;
 
 	.form-group {
 		display: flex;
@@ -443,6 +443,12 @@ th, td {
 	}
 }
 
+.inline {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
 /* ********************************************* */
 /* ***************    RESULTS   **************** */
 /* ********************************************* */
@@ -452,6 +458,9 @@ th, td {
 }
 
 .extraBetList {
+	table {
+		width: 100%;
+	}
 	table tr:nth-child(odd) {
 		background-color: $yellow;
 	}
