@@ -4,7 +4,7 @@
 	<div class="row">
 		<div class="logowrapper col-md-12">
 			<div class="logo col-md-5 col-sm-12 col-xs-12">
-				<h1>bizza.online</h1>
+				<h1>Tippzter</h1>
 			</div>
 		
 			<div class="col-md-7 col-sm-12 col-xs-12" id="login">	
