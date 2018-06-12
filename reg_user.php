@@ -21,7 +21,7 @@ if(mysqli_query($db_connect, $sql)){
 		VALUES ('$group', '$username', '$user_id')";
 
 	mysqli_query($db_connect, $tour);
-	header("location: slutspel.php");
+	//header("location: index.php");
 	echo "<h2><a href='index.php'>Thank you for creating a user. Now you can go back and login.</a></h2>";
 
 
