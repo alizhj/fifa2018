@@ -29,12 +29,11 @@ while($row = mysqli_fetch_assoc($result3)) {
 
 ?>
 <input id="tour_id" type="hidden" value="<?php echo $tournament_id ?>">
-<div class="container">
-	<div class="row">
+
 		<div class="extra_bet_box">
 <? if($tournament_started){
 					?>
-			<form action="includes/save_extra_bet.php" class="form-inline" method="post" role="form">
+			<form action="includes/save_extra_bet.php" class="inline" method="post" role="form">
 				<div class="form-group">
 					<label for="player">Top scorer:</label>
 					<input class="form-control" type="text" name="player" value="<?php echo $player; ?>"/>
@@ -80,8 +79,7 @@ while($row = mysqli_fetch_assoc($result3)) {
 				}
 				?>
 				
-		</div>
-	</div>
+
 </div>
 
 <?php 
