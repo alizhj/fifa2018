@@ -27,6 +27,17 @@ while($row = mysqli_fetch_assoc($result3)) {
 }
 
 
+	$extraBetQuery = "SELECT extra_bets.*, teams.team_name, teams.team_flag, users.user_name FROM extra_bets
+					RIGHT JOIN teams
+					ON teams.team_id = extra_bets.winning_team
+					RIGHT JOIN users
+					ON users.user_id = extra_bets.user_id
+					WHERE tournament_id = $tournament_id";
+
+	$extraBetResult = $db_connect->query($extraBetQuery);
+			
+
+
 ?>
 <input id="tour_id" type="hidden" value="<?php echo $tournament_id ?>">
 
@@ -64,6 +75,33 @@ while($row = mysqli_fetch_assoc($result3)) {
 				<input type="hidden" name="tournament_id" value="<?php echo $tournament_id; ?>" />
 				
 			</form>	
+			
+
+			<div class="extraBetList">
+				<table>
+					<tr>
+						<th>User</th>
+						<th>Winning team</th>
+						<th>Top Scorer</th>
+					</tr>
+
+					<?php
+					while($row = mysqli_fetch_assoc($extraBetResult)) { 
+						$user = $row["user_name"];
+						$team = $row["team_name"];
+						$player = $row["winning_player"];
+						$flag = $row["team_flag"];
+						?>
+						<tr>
+							<td><?php echo $user; ?></td>
+							<td><?php echo $team; ?><img class="flag" src="img/flags/<?php echo $flag; ?>"/></td>
+							<td><?php echo $player; ?></td>
+						</tr>
+						<?php
+					}
+					?>
+			</table>
+			</div>
 				<?php
 				} else {
 				?>
@@ -82,41 +120,6 @@ while($row = mysqli_fetch_assoc($result3)) {
 
 </div>
 
-<?php 
-	$extraBetQuery = "SELECT extra_bets.*, teams.team_name, teams.team_flag, users.user_name FROM extra_bets
-					RIGHT JOIN teams
-					ON teams.team_id = extra_bets.winning_team
-					RIGHT JOIN users
-					ON users.user_id = extra_bets.user_id
-					WHERE tournament_id = $tournament_id";
-
-	$extraBetResult = $db_connect->query($extraBetQuery);
-			?>
-<div class="extraBetList">
-	<table>
-		<tr>
-			<th>User</th>
-			<th>Winning team</th>
-			<th>Top Scorer</th>
-		</tr>
-
-		<?php
-		while($row = mysqli_fetch_assoc($extraBetResult)) { 
-			$user = $row["user_name"];
-			$team = $row["team_name"];
-			$player = $row["winning_player"];
-			$flag = $row["team_flag"];
-			?>
-			<tr>
-				<td><?php echo $user; ?></td>
-				<td><?php echo $team; ?><img class="flag" src="img/flags/<?php echo $flag; ?>"/></td>
-				<td><?php echo $player; ?></td>
-			</tr>
-			<?php
-		}
-		?>
-</table>
-</div>
 
 
 
