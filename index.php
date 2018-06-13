@@ -167,8 +167,8 @@ function gamesTomorrow(){
 			<?php
 			echo date("d F H:i", strtotime($game_start));
 			?></h4><h4></br><?php echo $home_name; ?>
-			<img src="img/flags/<?php echo $home_flag; ?> ">  VS  
-			<img src="img/flags/<?php echo $away_flag; ?>"><?php echo $away_name; ?></h4
+			<img class="flag" src="img/flags/<?php echo $home_flag; ?> ">  VS  
+			<img class="flag" src="img/flags/<?php echo $away_flag; ?>"><?php echo $away_name; ?></h4
 			></br><?php
 		}
 		else if($game_start < 0) {
