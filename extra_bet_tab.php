@@ -102,20 +102,20 @@ while($row = mysqli_fetch_assoc($result3)) {
 					?>
 			</table>
 			</div>
-				<?php
-				} else {
-				?>
-					<div class="form-group">
-					<label for="player">Top scorer:</label>
-					<?php echo $player; ?>
-				</div>
-				<div class="form-group">
-					<label for="winning_team">World Cup winner:</label>
-					<?php echo $teamName; ?>								
-				</div>
-				<?php
-				}
-				?>
+		<?php
+		} else {
+		?>
+			<div class="form-group">
+			<label for="player">Top scorer:</label>
+			<?php echo $player; ?>
+		</div>
+		<div class="form-group">
+			<label for="winning_team">World Cup winner:</label>
+			<?php echo $teamName; ?>								
+		</div>
+		<?php
+		}
+		?>
 				
 
 </div>
