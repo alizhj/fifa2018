@@ -139,7 +139,7 @@ while ($slutspelbetsRow = mysqli_fetch_row($slutspelbetsResult)) {
 						<td style="text-align:center;" class="locked"><img class="flag" src="img/flags/<?php echo $away_flag; ?>" /></td>
 						<td style="text-align:left;" class="locked mobile_hide"><?php echo $away_name;?></td>
 						<td style="text-align:center;" class="locked" colspan="3"><?php echo $goal_home; ?> - <?php echo $goal_away; ?></td>
-						<td style="text-align:center;" class="locked">Result </br>(<?php echo $result_goal_home; ?> - <?php echo $result_goal_away; ?>)</td>
+						<td style="text-align:center;" class="locked">(<?php echo $result_goal_home; ?> - <?php echo $result_goal_away; ?>)</td>
 					</tr>
 					<tr class="togglable" id="togglable_<?php echo $game_id; ?>" style="display:none;background-color:#E6E86C">
 					
