@@ -8,7 +8,7 @@ $query1 = "SELECT team_name, team_id FROM teams";
 $result1 = $db_connect->query($query1);
 
 $result3 = $db_connect->query($query1);
-$tournament_started = hasDateExpired("2018-06-14 17:00:00");
+$tournament_started = hasDateExpired("2018-06-13 17:00:00");
 
 $result = mysqli_query($db_connect, "SELECT * FROM extra_bets WHERE user_id = '$user_id' AND tournament_id = '$tournament_id'");
 
