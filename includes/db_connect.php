@@ -32,6 +32,4 @@
 
 		return $start_time >= $lock_time;
 	}
-
-	echo date('Y-m-d H:i:s');
 ?>
