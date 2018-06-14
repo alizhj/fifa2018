@@ -102,7 +102,7 @@ $extraBetResult = $db_connect->query($extraBetQuery);
 			?>
 			<tr>
 				<td><?php echo $user; ?></td>
-				<td><?php echo $team; ?><img class="flag" src="img/flags/<?php echo $flag; ?>"/></td>
+				<td><img class="flag" src="img/flags/<?php echo $flag; ?>"/> <?php echo $team; ?></td>
 				<td><?php echo $player; ?></td>
 			</tr>
 			<?php
