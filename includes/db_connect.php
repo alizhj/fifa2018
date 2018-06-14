@@ -1,5 +1,8 @@
 <?php
-
+	// define("DB_HOST", "localhost");
+	// define("DB_USER", "root");
+	// define("DB_PASS", "root");
+	// define("DB_NAME", "fifa2018");
 
 	define("DB_HOST", "us-cdbr-iron-east-04.cleardb.net");
 	define("DB_USER", "bdb8f6a6942bdc");
@@ -29,4 +32,6 @@
 
 		return $start_time >= $lock_time;
 	}
+
+	echo date('Y-m-d H:i:s');
 ?>
