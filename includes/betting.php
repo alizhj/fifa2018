@@ -29,8 +29,7 @@ while($row = mysqli_fetch_assoc($result3)) {
 
 $betsRows = array();
 
-$betsQuery = "			SET time_zone = '+02:00';
-						SELECT bets.game_id, user_name, goal_home, goal_away FROM bets 
+$betsQuery = "SELECT bets.game_id, user_name, goal_home, goal_away FROM bets 
 						INNER JOIN (users, game_match) 
 						ON (bets.user_id = users.user_id AND bets.game_id = game_match.game_id) 
 						WHERE tournament_id = $tournament_id
@@ -47,8 +46,7 @@ while ($betsRow = mysqli_fetch_row($betsResult)) {
 
 $slutspelbetsRows = array();
 
-$slutspelbetsQuery = "	SET time_zone = '+02:00';
-						SELECT slutspel_bets.slutspel_id, user_name, goal_home, goal_away FROM slutspel_bets 
+$slutspelbetsQuery = "SELECT slutspel_bets.slutspel_id, user_name, goal_home, goal_away FROM slutspel_bets 
 						INNER JOIN (users, slutspel) 
 						ON (slutspel_bets.user_id = users.user_id AND slutspel_bets.slutspel_id = slutspel.slutspel_id) 
 						WHERE tournament_id = $tournament_id
