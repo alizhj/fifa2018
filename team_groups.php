@@ -102,9 +102,9 @@ function groupTeams($teamGroup){
 				<td></td>
 				<td style="width:100px;"></td>
 				<td>h</td>
-				<td>b</td>
+				<td>a</td>
 				<td>+/-</td>
-				<td>poäng</td>
+				<td>points</td>
 			</tr>
 		</thead>
 		<tbody>

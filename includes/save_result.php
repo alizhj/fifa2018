@@ -308,7 +308,6 @@ function slutspelPoints($user_id, $tournament_id) {
   		
   		
     }
-  	//echo $slutspel_points . "slutspelpoäng" . "</br>";
   	return $slutspel_points;
   	
 }

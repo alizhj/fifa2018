@@ -29,12 +29,12 @@ while($row = mysqli_fetch_assoc($result3)) {
 
 $betsRows = array();
 
-$betsQuery = "SELECT bets.game_id, user_name, goal_home, goal_away FROM bets 
-						INNER JOIN (users, game_match) 
-						ON (bets.user_id = users.user_id AND bets.game_id = game_match.game_id) 
-						WHERE tournament_id = $tournament_id
-						AND game_start < DATE_SUB(ADDTIME(NOW(), '02:00:00'), INTERVAL 10 MINUTE) 
-						ORDER BY bets.game_id, user_name ASC";
+	$betsQuery = "SELECT bets.game_id, user_name, goal_home, goal_away FROM bets 
+							INNER JOIN (users, game_match) 
+							ON (bets.user_id = users.user_id AND bets.game_id = game_match.game_id) 
+							WHERE tournament_id = $tournament_id
+							AND game_start < DATE_SUB(ADDTIME(NOW(), '02:00:00'), INTERVAL 10 MINUTE) 
+							ORDER BY bets.game_id, user_name ASC";
 
 $betsResult = $db_connect->query($betsQuery);
 
@@ -262,7 +262,7 @@ while ($slutspelbetsRow = mysqli_fetch_row($slutspelbetsResult)) {
 						<td style="text-align:center;" class="locked"><img class="flag" src="img/flags/<?php echo $away_flag; ?>" /></td>
 						<td style="text-align:left;" class="locked mobile_hide"><?php echo $away_name;?></td>
 						<td style="text-align:center;" class="locked" colspan="3"><?php echo $goal_home; ?> - <?php echo $goal_away; ?></td>
-						<td style="text-align:center;" class="locked">Resultat </br>(<?php echo $result_goal_home; ?> - <?php echo $result_goal_away; ?>)</td>
+						<td style="text-align:center;" class="locked">(<?php echo $result_goal_home; ?> - <?php echo $result_goal_away; ?>)</td>
 					</tr>
 					<tr class="s_togglable" id="s_togglable_<?php echo $slutspel_id; ?>" style="display:none;background-color:#E6E86C">
 					

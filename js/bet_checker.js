@@ -60,8 +60,8 @@ $(document).ready(function(){
 		        	success:function(data){
 		        		console.log(data);
 		        		$('#myModal').appendTo("body").modal('show');
-		        		$('.modal-title').html("Spara");
-		        		$('.modal-body').html("Dina bets är nu sparade");
+		        		$('.modal-title').html("Save bets");
+		        		$('.modal-body').html("Your bets are saved");
 		        	}
 	   		});
 		}
@@ -73,8 +73,8 @@ $(document).ready(function(){
 		        	success:function(data){
 		        		console.log(data);
 		        		$('#myModal').appendTo("body").modal('show');
-		        		$('.modal-title').html("Spara");
-		        		$('.modal-body').html("Dina bets är nu sparade");
+		        		$('.modal-title').html("Save");
+		        		$('.modal-body').html("Your bets are saved");
 		        	}
 	   		});
 		}
