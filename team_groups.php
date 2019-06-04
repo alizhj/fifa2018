@@ -4,7 +4,7 @@
 <div class="container-fluid">
 	<div class="row">
 		<?php
-$groups= array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H');
+$groups= array('A', 'B', 'C', 'D', 'E', 'F');
 
 $grouplength = count($groups);
 

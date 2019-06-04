@@ -1,2 +1,5 @@
 .DS_Store
 includes/db_connect.php
+node_modules/
+.sass-cache/
+ scss/
