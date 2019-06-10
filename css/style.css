@@ -372,10 +372,10 @@ h1 {
   font-size: 40px; }
 
 h2 {
-  color: #E6E86C; }
+  color: #c76f6d; }
 
 h3 {
-  color: #00987f; }
+  color: #020f48; }
 
 .flag {
   width: 30px;
@@ -392,9 +392,13 @@ td {
 /* ****************    MENU     **************** */
 /* ********************************************* */
 .navbar {
-  background-color: #00987f;
+  background-color: #020f48;
   border-radius: 0px;
-  border: none; }
+  border: none;
+  margin-bottom: 0; }
+  .navbar li a {
+    color: white !important;
+    margin-left: 20px; }
   .navbar li:hover {
     background-color: #ddd; }
   .navbar.logout {
@@ -405,17 +409,17 @@ td {
   padding: 10px 14px; }
 
 .active {
-  background-color: #E6E86C; }
+  background-color: #c76f6d; }
 
 .navbar-right li {
-  background-color: #E6E86C; }
+  background-color: #c76f6d; }
 
 .navbar-collapse {
   padding: 0; }
 
 .navbar-nav.logout {
   float: right !important;
-  background-color: #E6E86C; }
+  background-color: #c76f6d; }
 
 /* ********************************************* */
 /* ***************    INDEX     **************** */
@@ -425,22 +429,14 @@ td {
   font-weight: 900;
   font-size: 60px;
   font-style: italic;
-  color: black;
+  color: white;
   padding-left: 20px;
   margin-top: 5px; }
 
 .logowrapper {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#02aaad+0,3f8c93+100,3f5c96+100,8de5b5+100 */
-  background: #02aaad;
+  background: #020f48;
   /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #02aaad 0%, #3f8c93 100%, #3f5c96 100%, #8de5b5 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #02aaad 0%, #3f8c93 100%, #3f5c96 100%, #8de5b5 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #02aaad 0%, #3f8c93 100%, #3f5c96 100%, #8de5b5 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02aaad', endColorstr='#8de5b5',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
   height: 90px; }
   .logowrapper #login, .logowrapper #registrate {
     text-align: right; }
@@ -464,21 +460,14 @@ td {
   height: 600px; }
   .field .teaser {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#02aaad+0,3f8c93+100,3f5c96+100,8de5b5+100 */
-    background: #02aaad;
+    background: #c76f6d;
     /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #02aaad 0%, #3f8c93 100%, #3f5c96 100%, #8de5b5 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #02aaad 0%, #3f8c93 100%, #3f5c96 100%, #8de5b5 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #02aaad 0%, #3f8c93 100%, #3f5c96 100%, #8de5b5 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02aaad', endColorstr='#8de5b5',GradientType=1 );
-    /* IE6-9 fallback on horizontal gradient */
     border-radius: 5px;
     margin-top: 400px;
     width: 500px;
     padding: 10px;
-    overflow: hidden; }
+    overflow: hidden;
+    display: none; }
     .field .teaser p {
       font-size: 20px;
       font-style: italic;
@@ -539,7 +528,7 @@ td {
   overflow: hidden;
   height: 470px; }
   .wrapper h1 {
-    color: #E6E86C;
+    color: #c76f6d;
     font-size: 70px;
     margin-left: 20px; }
   .wrapper h2 {
@@ -554,7 +543,7 @@ td {
   float: none;
   list-style: none;
   position: relative;
-  margin: -53px 0 0 10px;
+  margin: -53px 0 0;
   text-align: left; }
   .tabs li {
     float: left;
@@ -570,9 +559,11 @@ td {
     padding: 14px 21px;
     cursor: pointer; }
   .tabs .tab1, .tabs #tab-content1 {
-    background-color: #00987f; }
+    background-color: #020f48; }
+  .tabs .scoreboardLabel {
+    color: white; }
   .tabs .tab2, .tabs #tab-content2 {
-    background-color: #E6E86C; }
+    background-color: #c76f6d; }
   .tabs .tab3, .tabs #tab-content3 {
     background-color: #ededec; }
   .tabs p {
@@ -605,7 +596,7 @@ p.link {
     padding: 5px 10px;
     margin: 0 5px; }
     p.link a:hover {
-      background-color: #00987f; }
+      background-color: #020f48; }
 
 .group_scoreboard {
   padding: 10px; }
@@ -634,7 +625,7 @@ p.link {
     margin-top: 15px; }
 
 .line {
-  border-bottom: 2px solid #00987f; }
+  border-bottom: 2px solid #020f48; }
 
 th, td {
   padding: 5px; }
@@ -701,7 +692,7 @@ td {
 .extraBetList table {
   width: 100%; }
 .extraBetList table tr:nth-child(odd) {
-  background-color: #E6E86C; }
+  background-color: #8da583; }
 
 /* ********************************************* */
 /* ************    CREATE GROUP    ************* */
@@ -744,19 +735,21 @@ td {
     margin: 0 !important; }
     .navbar-nav.logout {
       float: left !important;
-      background-color: #E6E86C; }
+      background-color: #c76f6d; }
 
   /* ********************************************* */
   /* ***************    INDEX     **************** */
   /* ********************************************* */
   .logowrapper {
-    height: 77px; }
+    height: 77px;
+    background-color: #020f48; }
 
   .logo h1 {
     font-size: 40px;
     margin-top: 9px;
     text-align: center;
-    padding-left: 0; }
+    padding-left: 0;
+    color: white; }
 
   .info {
     overflow: hidden;
@@ -779,9 +772,10 @@ td {
   .field {
     background-image: url(../img/fifawomen.jpg);
     margin-top: -30px;
-    text-align: center; }
+    text-align: center;
+    height: 220px; }
     .field .teaser {
-      width: 100%; }
+      display: none; }
 
   .info {
     overflow: hidden; }
@@ -793,7 +787,8 @@ td {
   /* **************    USER DASH    ************** */
   /* ********************************************* */
   .wrapper {
-    background-image: url(../img/fifawomen.jpg); }
+    background-image: url(../img/fifawomen.jpg);
+    height: 230px; }
 
   #check {
     width: 100%; }
@@ -814,7 +809,7 @@ td {
     top: 52px;
     height: 100vh;
     width: 100%;
-    background-color: #00987f;
+    background-color: #020f48;
     z-index: 50; } }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .tablet_hide {

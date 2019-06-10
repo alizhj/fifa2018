@@ -18,12 +18,15 @@
 
 .logowrapper {
 	height: 77px;
+	background-color: $petrol;
 }
+
 .logo h1 {
 	font-size: 40px;
 	margin-top: 9px;
 	text-align:center;
 	padding-left:0;
+	color: white;
 }
 
 .info {
@@ -54,12 +57,13 @@
 	}
 }
 .field {
-	background-image: url(../img/gameMob.png);
+	background-image: url(../img/fifawomen.jpg);
 	margin-top: -30px;
 	text-align:center;
+	height: 220px;
 
 	.teaser {
-		width: 100%;
+		display: none;
 	}
 }
 
@@ -76,7 +80,8 @@
 /* ********************************************* */
 
 .wrapper {
-	background-image: url(../img/gameMob.png);
+	background-image: url(../img/fifawomen.jpg);
+	height: 230px;
 }
 
 #check {

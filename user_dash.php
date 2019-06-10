@@ -6,23 +6,20 @@ if($_SESSION['user_loggedin'] != 'true') {
 
 ?>
 <div class="container-fluid">
-	<div class="row">
+		<?php include 'includes/menu.php'; ?>
 
 		<div class="wrapper col-sm-12">
-			<?php include 'includes/menu.php'; ?>
-			<h1>Welcome <?php echo $_SESSION['user_name']; ?></h1>
 			<?php include 'bet.php' ?>
 		</div>	
-	</div>
+
 </div>
 
 <div class="container-fluid">
-	<div class="row">
 
 		<ul class="tabs">
 		    <li class="tab1 active">
 		        <input type="radio" name="tabs" id="tab1" checked/>
-		        <label for="tab1">Scoreboard</label>
+		        <label class="scoreboardLabel" for="tab1">Scoreboard</label>
 		        <div id="tab-content1" class="tab-content">
 		        </div>
 		    </li>
@@ -45,7 +42,6 @@ if($_SESSION['user_loggedin'] != 'true') {
 		</ul>
 
 		<br style="clear: both;" />
-	</div><!-- #row -->
 </div><!-- #container-fluid -->
 		
 
